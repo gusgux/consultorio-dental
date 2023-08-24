@@ -1,0 +1,23 @@
+header{
+    display: flex;
+}
+
+.titulo{
+    color: rgb(62, 134, 230)
+}
+.resaltado{
+    color: rgb(41, 112, 188)
+}
+
+.footer{
+    font-size: larger; background-color: rgb(102, 162, 240)
+}
+
+.contenedor{display: flex;
+gap: 10px;}
+
+.contenedor-img{ 
+    background-color: aqua;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
