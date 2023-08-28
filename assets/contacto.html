@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--  <link rel="stylesheet" href="./style/reset.css" /> -->
+
+    <title>Contacto</title>
+  </head>
+  <body>
+    <main>
+      <h2>Agente su cita</h2>
+      <!--  formulario -->
+      <form action="./contacto.html" method="post">
+        <!--  informacion del cliente -->
+        <!--         fieldset para separar datos relacionados
+ -->
+        <fieldset>
+          <legend>Datos de contacto</legend>
+          <label for="nombre">Ingrese su nombre completo</label>
+          <input type="text" name="nombre" placeholder="Nombre completo" />
+          <br />
+          <label for="correo">Ingrese su numero Correo de contacto</label>
+          <input
+            type="email"
+            name="correo"
+            id="correo"
+            placeholder="Correo valido"
+          />
+          <br />
+          <label for="telefono">Ingrese su numero telefonico</label>
+          <input type="tel" name="tel" id="telefono" placeholder="10 digitos" />
+        </fieldset>
+        <br />
+        <!--          Datos de Fecha
+ -->
+        <fieldset>
+          <legend>Fecha</legend>
+          <label for="fecha">Seleccione la fecha</label>
+          <input type="date" name="fecha" id="fecha" />
+          <br />
+          <label for="horario">Seleccione la hora</label>
+          <input type="time" name="horario" id="horario" />
+        </fieldset>
+        <br />
+        <!--          Datos de tratamiento
+ -->
+        <fieldset>
+          <legend>Tratamiento</legend>
+          <label for="tratamiento">Seleccione el tratamiento</label>
+          <select name="tratamiento" id="tratamiento">
+            <option value="limpieza">Limpieza</option>
+            <option value="muela" selected>Extraccionde muelas</option>
+            <option value="brackets">Brackets</option>
+            <option value="empaste">Empastes</option>
+            <option value="otros">Otros</option>
+          </select>
+          <br />
+          <label for="description"
+            >Describa sobre el estado actual de su problema</label
+          >
+          <br />
+          <textarea
+            name="description"
+            id=""
+            cols="50"
+            rows="5"
+            placeholder="Describa su problema brevemente"
+          ></textarea>
+        </fieldset>
+        <!--         datos de privacidad
+ -->
+        <fieldset>
+          <legend>Terminos y condiciones</legend>
+          <input type="checkbox" name="datos" />
+          <label for="datos">Acepta compartir los datos proporcionados</label>
+          <br />
+          <input type="checkbox" name="llamada" />
+          <label for="llamada"
+            >Acepta recibir una llamada para confirmar la cita</label
+          >
+        </fieldset>
+        <br />
+        <button>Agredar cita</button>
+      </form>
+    </main>
+  </body>
+</html>
